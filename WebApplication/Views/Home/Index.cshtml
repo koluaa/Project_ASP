@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<h1>Проект</h1>
+@using (Html.BeginForm("LoadXml", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="file" /><br>
+    <input type="submit" value="Загрузить" />
+}
